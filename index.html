@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local cart</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Local Cart</p>
+        <hr>
+        <div class="row">
+            <div class="col s6">
+                <div class="row">
+                    <div class="col s12 m7">
+                        <div class="card">
+                            <div class="card-image">
+                                <img
+                                    src="https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/1049x590/quality/80/https://s.aolcdn.com/os/ab/_cms/2020/05/20160338/2020-Honda-Civic-Type-R-099.jpg">
+                                <span class="card-title">Honda Civic TypeR</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Hot Hatch</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" id="1" onclick="addToCart(event)">Add to cart</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="https://s1.cdn.autoevolution.com/images/gallery/BMW-BMW-M3--F80--5085_12.jpg">
+                                <span class="card-title">BMW M3 350i</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Super sedan</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" id="2" onclick="addToCart(event)">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="cart-display" id="cart">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="./api.service.js"></script>
+<script src="./components/item.js"></script>
+<script src="./components/Cart.js"></script>
+<script src="./event.handler.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
